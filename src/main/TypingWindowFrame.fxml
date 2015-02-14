@@ -16,7 +16,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem fx:id="menuItemClose" mnemonicParsing="false" onAction="#close" text="Close" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
@@ -117,12 +117,12 @@
                         <RowConstraints minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="Kanji" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                        <Button fx:id="keyJapan" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="Kanji" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="1" GridPane.columnIndex="1">
+                        <Button fx:id="key1" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="1" GridPane.columnIndex="1">
                            <font>
                               <Font size="18.0" />
                            </font>

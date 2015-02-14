@@ -1,12 +1,24 @@
 package main;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 
-/**
- * Created by Ryoto on 2/9/2015.
- */
 public class Controller {
+
+    @FXML
+    private Button key1;
+
+    @FXML
+    private Button keyJapan;
+
+    @FXML
+    private MenuItem menuItemClose;
+
+    @FXML
+    void close(ActionEvent event) {
+        System.exit(2);
+    }
 
 }
