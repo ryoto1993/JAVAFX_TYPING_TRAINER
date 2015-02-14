@@ -57,6 +57,73 @@
                     <rowConstraints>
                         <RowConstraints minHeight="40.0" prefHeight="55.0" vgrow="SOMETIMES" />
                     </rowConstraints>
+                     <children>
+                        <Button fx:id="keyCaps" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="CapsLock">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyA" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="A" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyS" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="S" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyD" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="D" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyF" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="F" GridPane.columnIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyG" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="G" GridPane.columnIndex="5">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyH" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="H" GridPane.columnIndex="6">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyJ" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="J" GridPane.columnIndex="7">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyK" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="K" GridPane.columnIndex="8">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyL" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="L" GridPane.columnIndex="9">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keySemiCoron" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text=";" GridPane.columnIndex="10">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyCoron" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text=":" GridPane.columnIndex="11">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyRBracket" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="]" GridPane.columnIndex="12">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
                   </GridPane>
                   <GridPane gridLinesVisible="true" layoutX="99.0" layoutY="78.0">
                      <columnConstraints>
@@ -77,6 +144,73 @@
                      <rowConstraints>
                         <RowConstraints minHeight="40.0" prefHeight="55.0" vgrow="SOMETIMES" />
                      </rowConstraints>
+                     <children>
+                        <Button fx:id="keyTab" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="Tab">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyQ" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="Q" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyW" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="W" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyE" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="E" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyR" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="R" GridPane.columnIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyT" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="T" GridPane.columnIndex="5">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyY" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="Y" GridPane.columnIndex="6">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyU" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="U" GridPane.columnIndex="7">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyI" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="I" GridPane.columnIndex="8">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyO" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="O" GridPane.columnIndex="9">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyP" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="P" GridPane.columnIndex="10">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyAt" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="\@" GridPane.columnIndex="11">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyLBracket" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="[" GridPane.columnIndex="12">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
                   </GridPane>
                   <GridPane gridLinesVisible="true" layoutX="99.0" layoutY="269.0">
                      <columnConstraints>
@@ -123,6 +257,71 @@
                            </font>
                         </Button>
                         <Button fx:id="key1" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="1" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="key2" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="2" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="key3" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="3" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="key4" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="4" GridPane.columnIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="key5" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="5" GridPane.columnIndex="5">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="key6" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="6" GridPane.columnIndex="6">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="key7" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="7" GridPane.columnIndex="7">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="key8" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="8" GridPane.columnIndex="8">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="key9" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="9" GridPane.columnIndex="9">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="key0" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="0" GridPane.columnIndex="10">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyMinus" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="-" GridPane.columnIndex="11">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyHat" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="^" GridPane.columnIndex="12">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyYen" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="\\" GridPane.columnIndex="13">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyBS" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="BS" GridPane.columnIndex="14">
                            <font>
                               <Font size="18.0" />
                            </font>
