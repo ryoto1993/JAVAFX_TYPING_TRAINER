@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
@@ -228,6 +230,58 @@
                      <rowConstraints>
                         <RowConstraints minHeight="40.0" prefHeight="55.0" vgrow="SOMETIMES" />
                      </rowConstraints>
+                     <children>
+                        <Button fx:id="keyCtrl" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="Ctrl">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyWin" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="Win" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyAlt" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="Alt" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyMuhenkan" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="○" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keySpace" maxHeight="100.0" maxWidth="500.0" mnemonicParsing="false" text="Space" GridPane.columnIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyHenkan" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="●" GridPane.columnIndex="5">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyKana" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="Kana" GridPane.columnIndex="6">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyRAlt" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="Alt" GridPane.columnIndex="7">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyCaps158" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="≡" GridPane.columnIndex="8">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyRCtrl" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="Ctrl" GridPane.columnIndex="9">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
                   </GridPane>
                   <GridPane gridLinesVisible="true" layoutX="99.0" layoutY="14.0">
                      <columnConstraints>
@@ -251,7 +305,7 @@
                         <RowConstraints minHeight="50.0" prefHeight="55.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <Button fx:id="keyJapan" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="Kanji" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                        <Button fx:id="keyHankaku" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" text="Kanji" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -347,6 +401,73 @@
                      <rowConstraints>
                         <RowConstraints minHeight="40.0" prefHeight="55.0" vgrow="SOMETIMES" />
                      </rowConstraints>
+                     <children>
+                        <Button fx:id="keyShift" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="Shift">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyZ" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="Z" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyX" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="X" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyC" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="C" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyV" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="V" GridPane.columnIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyB" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="B" GridPane.columnIndex="5">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyN" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="N" GridPane.columnIndex="6">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyM" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="M" GridPane.columnIndex="7">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyComma" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="," GridPane.columnIndex="8">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyPeriod" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="." GridPane.columnIndex="9">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keySlash" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="/" GridPane.columnIndex="10">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyBackSlash" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="＼" GridPane.columnIndex="11">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="keyRShift" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="Shift" GridPane.columnIndex="12">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
                   </GridPane>
                </children>
                <opaqueInsets>

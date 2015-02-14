@@ -17,6 +17,9 @@ public class Controller {
     private Button key0;
 
     @FXML
+    private Button keyHenkan;
+
+    @FXML
     private Button key5;
 
     @FXML
@@ -32,9 +35,6 @@ public class Controller {
     private Button key9;
 
     @FXML
-    private Button keyJapan;
-
-    @FXML
     private Button key7;
 
     @FXML
@@ -44,7 +44,55 @@ public class Controller {
     private Button key8;
 
     @FXML
+    private Button keyPeriod;
+
+    @FXML
     private Button keyCoron;
+
+    @FXML
+    private Button keyAlt;
+
+    @FXML
+    private Button keyRShift;
+
+    @FXML
+    private Button keyWin;
+
+    @FXML
+    private Button keyRBracket;
+
+    @FXML
+    private Button keySemiCoron;
+
+    @FXML
+    private Button keyLBracket;
+
+    @FXML
+    private Button keyRAlt;
+
+    @FXML
+    private Button keyCtrl;
+
+    @FXML
+    private Button keyBackSlash;
+
+    @FXML
+    private Button keyCaps;
+
+    @FXML
+    private Button keyRCtrl;
+
+    @FXML
+    private Button keyHankaku;
+
+    @FXML
+    private Button keyShift;
+
+    @FXML
+    private Button keySpace;
+
+    @FXML
+    private Button keyMuhenkan;
 
     @FXML
     private Button keyYen;
@@ -74,16 +122,16 @@ public class Controller {
     private Button keyU;
 
     @FXML
-    private Button keyS;
+    private Button keyV;
 
     @FXML
-    private Button keyRBracket;
+    private Button keyS;
 
     @FXML
     private Button keyT;
 
     @FXML
-    private Button keySemiCoron;
+    private Button keyComma;
 
     @FXML
     private Button keyTab;
@@ -92,19 +140,37 @@ public class Controller {
     private Button keyY;
 
     @FXML
+    private Button keyKana;
+
+    @FXML
+    private Button keyZ;
+
+    @FXML
     private Button keyW;
+
+    @FXML
+    private Button keyX;
+
+    @FXML
+    private Button keySlash;
 
     @FXML
     private Button keyA;
 
     @FXML
-    private Button keyLBracket;
+    private Button keyB;
+
+    @FXML
+    private Button keyCaps158;
 
     @FXML
     private Button keyE;
 
     @FXML
     private Button keyF;
+
+    @FXML
+    private Button keyC;
 
     @FXML
     private Button keyD;
@@ -122,10 +188,13 @@ public class Controller {
     private Button keyH;
 
     @FXML
+    private Button keyM;
+
+    @FXML
     private MenuItem menuItemClose;
 
     @FXML
-    private Button keyCaps;
+    private Button keyN;
 
     @FXML
     private Button keyK;
