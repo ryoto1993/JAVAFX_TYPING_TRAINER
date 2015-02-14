@@ -207,4 +207,38 @@ public class Controller {
         System.exit(2);
     }
 
+    @FXML
+    void shiftPressed() {
+        key1.setText("!");
+        key2.setText("\"");
+        key3.setText("#");
+        key4.setText("$");
+        key5.setText("%");
+        key6.setText("&");
+        key7.setText("'");
+        key8.setText("(");
+        key9.setText(")");
+        key0.setText("");
+        keyMinus.setText("=");
+        keyHat.setText("~");
+        keyYen.setText("|");
+
+    }
+    @FXML
+    void shiftReleased() {
+        key1.setText("1");
+        key2.setText("2");
+        key3.setText("3");
+        key4.setText("4");
+        key5.setText("5");
+        key6.setText("6");
+        key7.setText("7");
+        key8.setText("8");
+        key9.setText("9");
+        key0.setText("0");
+        keyMinus.setText("-");
+        keyHat.setText("^");
+        keyYen.setText("\\");
+    }
+
 }

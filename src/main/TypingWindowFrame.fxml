@@ -402,7 +402,7 @@
                         <RowConstraints minHeight="40.0" prefHeight="55.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <Button fx:id="keyShift" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" text="Shift">
+                        <Button fx:id="keyShift" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onMousePressed="#shiftPressed" onMouseReleased="#shiftReleased" text="Shift">
                            <font>
                               <Font size="18.0" />
                            </font>
