@@ -1,14 +1,17 @@
 package main;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 
-public class Controller {
+public class TypingController implements EventHandler<KeyEvent> {
 
     @FXML
-    private Button key1;
+    public Button key1;
 
     @FXML
     private Button key2;
@@ -241,4 +244,24 @@ public class Controller {
         keyYen.setText("\\");
     }
 
+    // this is key handler catching ONLY INPUT BOX!!
+    @FXML
+    public void keyPressedHandle(KeyEvent event) {
+        if(event.getCode().equals(KeyCode.SHIFT)) {
+            shiftPressed();
+        }
+    }
+    @FXML
+    public void keyReleasedHandle(KeyEvent event) {
+        if(event.getCode().equals(KeyCode.SHIFT)) {
+            shiftReleased();
+        }
+
+    }
+
+    // This is key handler, of short cut key
+    @Override
+    public void handle(KeyEvent event) {
+
+    }
 }

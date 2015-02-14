@@ -5,6 +5,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.awt.event.KeyListener;
 import java.io.IOException;
 
 /**
@@ -14,6 +15,7 @@ public class TypingWindowFrame {
     public TypingWindowFrame(Stage stage) throws IOException{
 
         Parent root = FXMLLoader.load(getClass().getResource("TypingWindowFrame.fxml"));
+        root.setOnKeyPressed(new TypingController());
 
         stage.setTitle("Typing Trainer");
         stage.setScene(new Scene(root)  );

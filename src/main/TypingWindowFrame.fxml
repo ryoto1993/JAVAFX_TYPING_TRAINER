@@ -12,7 +12,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.TypingController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -37,7 +37,14 @@
    <center>
       <SplitPane dividerPositions="0.4697" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <TextField fx:id="inputBox" layoutX="100.0" layoutY="120.0" onKeyPressed="#keyPressedHandle" onKeyReleased="#keyReleasedHandle" prefHeight="60.0" prefWidth="899.0">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </TextField>
+               </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0">
                <children>
                   <GridPane gridLinesVisible="true" layoutX="99.0" layoutY="141.0">
