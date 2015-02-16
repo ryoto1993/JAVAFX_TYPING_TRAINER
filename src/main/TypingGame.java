@@ -15,20 +15,26 @@ import java.util.Random;
  */
 public class TypingGame {
     private TextField inputBox;
+    TypingController typingController;
 
     public TypingGame(Stage stage) throws IOException{
-
-        Parent root = FXMLLoader.load(getClass().getResource("TypingWindowFrame.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        Parent root = fxmlLoader.load(getClass().getResource("TypingWindowFrame.fxml").openStream());
         root.setOnKeyPressed(new TypingController());
+        typingController = (TypingController)fxmlLoader.getController();
 
         stage.setTitle("Typing Trainer");
         stage.setScene(new Scene(root)  );
+
+        homePositionTrain();
 
     }
 
     public void homePositionTrain() {
         int v, f;
         Random random = new Random();
+
+        typingController.updateInputBox("Hello!");
 
         for(int i=0; i<10; i++) {
             for(int j=0; j<10; j++) {
@@ -66,4 +72,6 @@ public class TypingGame {
             }
         }
     }
+
+
 }

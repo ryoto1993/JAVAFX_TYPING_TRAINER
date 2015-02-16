@@ -5,6 +5,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
@@ -206,6 +207,9 @@ public class TypingController implements EventHandler<KeyEvent> {
     private Button keyL;
 
     @FXML
+    private TextField inputBox;
+
+    @FXML
     void close(ActionEvent event) {
         System.exit(2);
     }
@@ -242,6 +246,11 @@ public class TypingController implements EventHandler<KeyEvent> {
         keyMinus.setText("-");
         keyHat.setText("^");
         keyYen.setText("\\");
+    }
+
+    @FXML
+    public void updateInputBox(String s) {
+        inputBox.setText(s);
     }
 
     // this is key handler catching ONLY INPUT BOX!!
