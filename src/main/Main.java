@@ -15,7 +15,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException{
-        new TypingWindowFrame(stage);
+        new TypingGame(stage);
         stage.show();
     }
 }
