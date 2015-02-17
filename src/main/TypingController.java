@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
-public class TypingController /* implements EventHandler<KeyEvent> */ {
+public class TypingController implements EventHandler<KeyEvent> {
 
     @FXML
     public Button key1;
@@ -268,4 +268,11 @@ public class TypingController /* implements EventHandler<KeyEvent> */ {
 
     }
 
+    @Override
+    public void handle(KeyEvent event) {
+        if(event.getEventType().equals(KeyEvent.KEY_PRESSED))
+            keyPressedHandle(event);
+        else if(event.getEventType().equals(KeyEvent.KEY_RELEASED))
+            keyReleasedHandle(event);
+    }
 }

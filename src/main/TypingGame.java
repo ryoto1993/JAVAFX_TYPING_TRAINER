@@ -20,6 +20,8 @@ public class TypingGame {
     public TypingGame(Stage stage) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader();
         Parent root = fxmlLoader.load(getClass().getResource("HomePositionTrainerFrame.fxml").openStream());
+        root.setOnKeyPressed(fxmlLoader.getController());
+        root.setOnKeyReleased(fxmlLoader.getController());
         typingController = (TypingController)fxmlLoader.getController();
 
         stage.setTitle("Typing Trainer");
