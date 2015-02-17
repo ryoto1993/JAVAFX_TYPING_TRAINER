@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
-public class TypingController implements EventHandler<KeyEvent> {
+public class TypingController /* implements EventHandler<KeyEvent> */ {
 
     @FXML
     public Button key1;
@@ -210,7 +210,7 @@ public class TypingController implements EventHandler<KeyEvent> {
     private TextField inputBox;
 
     @FXML
-    void close(ActionEvent event) {
+    void close() {
         System.exit(2);
     }
 
@@ -253,7 +253,7 @@ public class TypingController implements EventHandler<KeyEvent> {
         inputBox.setText(s);
     }
 
-    // this is key handler catching ONLY INPUT BOX!!
+    // this is key handler catching
     @FXML
     public void keyPressedHandle(KeyEvent event) {
         if(event.getCode().equals(KeyCode.SHIFT)) {
@@ -268,9 +268,4 @@ public class TypingController implements EventHandler<KeyEvent> {
 
     }
 
-    // This is key handler, of short cut key
-    @Override
-    public void handle(KeyEvent event) {
-
-    }
 }
