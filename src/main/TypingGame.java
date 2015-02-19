@@ -1,10 +1,8 @@
 package main;
 
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,15 +12,14 @@ import java.util.Random;
  * Created by Ryoto on 2/9/2015.
  */
 public class TypingGame {
-    private TextField inputBox;
-    TypingController typingController;
+    TypingFrameController typingController;
 
     public TypingGame(Stage stage) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader();
         Parent root = fxmlLoader.load(getClass().getResource("HomePositionTrainerFrame.fxml").openStream());
         root.setOnKeyPressed(fxmlLoader.getController());
         root.setOnKeyReleased(fxmlLoader.getController());
-        typingController = (TypingController)fxmlLoader.getController();
+        typingController = (TypingFrameController)fxmlLoader.getController();
 
         stage.setTitle("Typing Trainer");
         stage.setScene(new Scene(root)  );
