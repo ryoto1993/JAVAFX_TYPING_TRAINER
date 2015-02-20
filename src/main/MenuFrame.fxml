@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8bc34a" height="123.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="700.0">
+         <effect>
+            <DropShadow color="#0000006c" height="23.96" radius="5.49" spread="0.08" width="0.0" />
+         </effect>
+      </Rectangle>
+      <Label layoutX="53.0" layoutY="34.0" text="Select mode" textFill="WHITE">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Ellipse fx:id="homePositionTrainerButton" fill="#4caf50" layoutX="227.0" layoutY="186.0" radiusX="31.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+      </Ellipse>
+      <Ellipse fx:id="homePositionTrainerKanaButton" fill="#ffeb3b" layoutX="150.0" layoutY="263.0" radiusX="31.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect>
+      </Ellipse>
+      <Ellipse fx:id="moguraTatakiButton" fill="#ff5722" layoutX="88.0" layoutY="342.0" radiusX="31.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect></Ellipse>
+      <Label layoutX="277.0" layoutY="164.0" text="Home Position Trainer" textFill="#656565">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="241.0" text="Home Position Trainer(Kana)" textFill="#656565">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="320.0" text="Mogura-tataki" textFill="#656565">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Ellipse fx:id="exitButton" fill="#e040fb" layoutX="574.0" layoutY="372.0" radiusX="49.0" radiusY="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
+         </effect></Ellipse>
+      <Label layoutX="550.0" layoutY="353.0" text="EXIT" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
