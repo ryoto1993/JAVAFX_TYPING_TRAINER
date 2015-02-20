@@ -10,7 +10,16 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Ellipse;
 
+enum Mode {
+    homePositionTrainer,
+    homePositionTrainerKana,
+    moguraTataki,
+    exit
+}
+
 public class MenuController {
+    Mode mode = Mode.homePositionTrainer;
+
     @FXML
     private Ellipse homePositionTrainerButton;
 
@@ -24,23 +33,42 @@ public class MenuController {
     private Ellipse moguraTatakiButton;
 
     @FXML
-    public void enter(Event e) {
-        Object tmp = e.getSource();
-        if(tmp.equals(homePositionTrainerButton)) {
+    public void enter() {
+        switch (mode) {
+            case homePositionTrainer:
 
-        } else if(tmp.equals(homePositionTrainerKanaButton)) {
+                break;
+            case homePositionTrainerKana:
 
-        } else if(tmp.equals(moguraTatakiButton)) {
+                break;
+            case moguraTataki:
 
-        } else if(tmp.equals(exitButton)) {
-            System.exit(2);
+                break;
+            case exit:
+                System.exit(2);
+                break;
         }
+    }
+
+    private void clearStroke() {
+        homePositionTrainerButton.setStrokeWidth(0.0);
+        homePositionTrainerKanaButton.setStrokeWidth(0.0);
+        moguraTatakiButton.setStrokeWidth(0.0);
+        exitButton.setStrokeWidth(0.0);
     }
 
     @FXML
     public void buttonOnMouseEntered(MouseEvent e) {
         Ellipse tmp;
         tmp = (Ellipse) e.getSource();
+
+        if(tmp.equals(homePositionTrainerButton)) mode = Mode.homePositionTrainer;
+        else if(tmp.equals(homePositionTrainerKanaButton)) mode = Mode.homePositionTrainerKana;
+        else if(tmp.equals(moguraTatakiButton)) mode = Mode.moguraTataki;
+        else mode = Mode.exit;
+
+        clearStroke();
+
         tmp.setStroke(Color.AQUAMARINE);
         tmp.setStrokeWidth(3.0);
     }
