@@ -5,10 +5,15 @@ package main;
  */
 
 import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Ellipse;
+
+import javax.swing.text.ElementIterator;
 
 enum Mode {
     homePositionTrainer,
@@ -17,7 +22,7 @@ enum Mode {
     exit
 }
 
-public class MenuController {
+public class MenuController implements EventHandler<KeyEvent> {
     Mode mode = Mode.homePositionTrainer;
 
     @FXML
@@ -57,6 +62,11 @@ public class MenuController {
         exitButton.setStrokeWidth(0.0);
     }
 
+    private void makeStroke(Ellipse ellipse) {
+        ellipse.setStroke(Color.AQUAMARINE);
+        ellipse.setStrokeWidth(3.0);
+    }
+
     @FXML
     public void buttonOnMouseEntered(MouseEvent e) {
         Ellipse tmp;
@@ -81,6 +91,52 @@ public class MenuController {
     }
 
 
-
+    @Override
+    public void handle(KeyEvent event) {
+        KeyCode code = event.getCode();
+        if(code.equals(KeyCode.SPACE) || code.equals(KeyCode.ENTER)) {
+            enter();
+        } else if(code.equals(KeyCode.UP)) {
+            clearStroke();
+            switch (mode) {
+                case homePositionTrainer:
+                    mode = Mode.exit;
+                    makeStroke(exitButton);
+                    break;
+                case homePositionTrainerKana:
+                    mode = Mode.homePositionTrainer;
+                    makeStroke(homePositionTrainerButton);
+                    break;
+                case moguraTataki:
+                    mode = Mode.homePositionTrainerKana;
+                    makeStroke(homePositionTrainerKanaButton);
+                    break;
+                case exit:
+                    mode = Mode.moguraTataki;
+                    makeStroke(moguraTatakiButton);
+                    break;
+            }
+        } else if(code.equals(KeyCode.DOWN)) {
+            clearStroke();
+           switch (mode) {
+               case homePositionTrainer:
+                   mode = Mode.homePositionTrainerKana;
+                   makeStroke(homePositionTrainerKanaButton);
+                   break;
+               case homePositionTrainerKana:
+                   mode = Mode.moguraTataki;
+                   makeStroke(moguraTatakiButton);
+                   break;
+               case moguraTataki:
+                   mode = Mode.exit;
+                   makeStroke(exitButton);
+                   break;
+               case exit:
+                   mode = Mode.homePositionTrainer;
+                   makeStroke(homePositionTrainerButton);
+                   break;
+           }
+        }
+    }
 }
 

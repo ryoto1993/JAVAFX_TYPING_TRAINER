@@ -19,6 +19,8 @@ public class Menu {
         FXMLLoader fxmlLoader = new FXMLLoader();
         Parent root = fxmlLoader.load(getClass().getResource("MenuFrame.fxml").openStream());
 
+        root.setOnKeyPressed(fxmlLoader.getController());
+
         Media bgm = new Media(Paths.get("bgm.mp3").toUri().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(bgm);
         mediaPlayer.setVolume(0.5);
