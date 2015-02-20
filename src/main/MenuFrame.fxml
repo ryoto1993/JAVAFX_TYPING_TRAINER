@@ -20,17 +20,17 @@
             <Font size="41.0" />
          </font>
       </Label>
-      <Ellipse fx:id="homePositionTrainerButton" fill="#4caf50" layoutX="227.0" layoutY="186.0" onMouseEntered="#buttonOnMouseEntered" onMouseExited="#buttonOnMouseExited" radiusX="31.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+      <Ellipse fx:id="homePositionTrainerButton" fill="#4caf50" layoutX="227.0" layoutY="186.0" onMouseClicked="#enter" onMouseEntered="#buttonOnMouseEntered" onMouseExited="#buttonOnMouseExited" radiusX="31.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
          <effect>
             <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
          </effect>
       </Ellipse>
-      <Ellipse fx:id="homePositionTrainerKanaButton" fill="#ffeb3b" layoutX="150.0" layoutY="263.0" onMouseEntered="#buttonOnMouseEntered" onMouseExited="#buttonOnMouseExited" radiusX="31.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+      <Ellipse fx:id="homePositionTrainerKanaButton" fill="#ffeb3b" layoutX="150.0" layoutY="263.0" onMouseClicked="#enter" onMouseEntered="#buttonOnMouseEntered" onMouseExited="#buttonOnMouseExited" radiusX="31.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
          <effect>
             <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
          </effect>
       </Ellipse>
-      <Ellipse fx:id="moguraTatakiButton" fill="#ff5722" layoutX="88.0" layoutY="342.0" onMouseEntered="#buttonOnMouseEntered" onMouseExited="#buttonOnMouseExited" radiusX="31.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+      <Ellipse fx:id="moguraTatakiButton" fill="#ff5722" layoutX="88.0" layoutY="342.0" onMouseClicked="#enter" onMouseEntered="#buttonOnMouseEntered" onMouseExited="#buttonOnMouseExited" radiusX="31.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
          <effect>
             <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
          </effect></Ellipse>
@@ -49,7 +49,7 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <Ellipse fx:id="exitButton" fill="#e040fb" layoutX="574.0" layoutY="372.0" onMouseClicked="#exit" onMouseEntered="#buttonOnMouseEntered" onMouseExited="#buttonOnMouseExited" radiusX="49.0" radiusY="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+      <Ellipse fx:id="exitButton" fill="#e040fb" layoutX="574.0" layoutY="372.0" onMouseClicked="#enter" onMouseEntered="#buttonOnMouseEntered" onMouseExited="#buttonOnMouseExited" radiusX="49.0" radiusY="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
          <effect>
             <DropShadow color="#00000080" height="20.0" radius="9.5" width="20.0" />
          </effect></Ellipse>
