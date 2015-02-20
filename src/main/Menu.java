@@ -20,6 +20,7 @@ public class Menu {
         Parent root = fxmlLoader.load(getClass().getResource("MenuFrame.fxml").openStream());
 
         root.setOnKeyPressed(fxmlLoader.getController());
+        root.setOnKeyReleased(fxmlLoader.getController());
 
         Media bgm = new Media(Paths.get("bgm.mp3").toUri().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(bgm);
