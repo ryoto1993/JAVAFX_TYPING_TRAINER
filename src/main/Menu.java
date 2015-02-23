@@ -22,6 +22,9 @@ public class Menu {
         root.setOnKeyPressed(fxmlLoader.getController());
         root.setOnKeyReleased(fxmlLoader.getController());
 
+        stage.setResizable(false);
+        stage.sizeToScene();
+
         Media bgm = new Media(Paths.get("bgm.mp3").toUri().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(bgm);
         mediaPlayer.setVolume(0.5);
