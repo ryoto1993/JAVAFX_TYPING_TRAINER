@@ -1,8 +1,10 @@
 package main;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
@@ -19,9 +21,6 @@ public class Menu {
         FXMLLoader fxmlLoader = new FXMLLoader();
         Parent root = fxmlLoader.load(getClass().getResource("MenuFrame.fxml").openStream());
 
-        root.setOnKeyPressed(fxmlLoader.getController());
-        root.setOnKeyReleased(fxmlLoader.getController());
-
         stage.setResizable(false);
         stage.sizeToScene();
 
@@ -30,7 +29,10 @@ public class Menu {
         mediaPlayer.setVolume(0.5);
         mediaPlayer.play();
 
+        Scene scene = new Scene(root);
+        scene.setOnKeyPressed(fxmlLoader.<EventHandler<KeyEvent>>getController());
+
         stage.setTitle("Mode Select");
-        stage.setScene(new Scene(root));
+        stage.setScene(scene);
     }
 }

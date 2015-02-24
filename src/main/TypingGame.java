@@ -1,8 +1,10 @@
 package main;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -17,12 +19,13 @@ public class TypingGame {
     public TypingGame(Stage stage) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader();
         Parent root = fxmlLoader.load(getClass().getResource("HomePositionTrainerFrame.fxml").openStream());
-        root.setOnKeyPressed(fxmlLoader.getController());
-        root.setOnKeyReleased(fxmlLoader.getController());
         typingController = (TypingFrameController)fxmlLoader.getController();
 
+        Scene scene = new Scene(root);
+        scene.setOnKeyPressed(fxmlLoader.<EventHandler<KeyEvent>>getController());
+
         stage.setTitle("Typing Trainer");
-        stage.setScene(new Scene(root)  );
+        stage.setScene(scene);
 
         homePositionTrain();
 
